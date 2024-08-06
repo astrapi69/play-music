@@ -2,20 +2,20 @@
 
 <div style="text-align: center">
 
-[![Java CI with Gradle](https://github.com/astrapi69/java-library-template/actions/workflows/gradle.yml/badge.svg)](https://github.com/astrapi69/java-library-template/actions/workflows/gradle.yml)
-[![Coverage Status](https://codecov.io/gh/astrapi69/java-library-template/branch/develop/graph/badge.svg)](https://codecov.io/gh/astrapi69/java-library-template)
-[![Open Issues](https://img.shields.io/github/issues/astrapi69/java-library-template.svg?style=flat)](https://github.com/astrapi69/java-library-template/issues)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/java-library-template/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/java-library-template)
-[![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/java-library-template.svg)](http://www.javadoc.io/doc/io.github.astrapi69/java-library-template)
+[![Java CI with Gradle](https://github.com/astrapi69/play-music/actions/workflows/gradle.yml/badge.svg)](https://github.com/astrapi69/play-music/actions/workflows/gradle.yml)
+[![Coverage Status](https://codecov.io/gh/astrapi69/play-music/branch/develop/graph/badge.svg)](https://codecov.io/gh/astrapi69/play-music)
+[![Open Issues](https://img.shields.io/github/issues/astrapi69/play-music.svg?style=flat)](https://github.com/astrapi69/play-music/issues)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/play-music/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/play-music)
+[![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/play-music.svg)](http://www.javadoc.io/doc/io.github.astrapi69/play-music)
 [![MIT License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](http://opensource.org/licenses/MIT)
 [![Donate](https://img.shields.io/badge/donate-❤-ff2244.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GVBTWLRAZ7HB8)
-[![Hits Of Code](https://hitsofcode.com/github/astrapi69/java-library-template?branch=develop)](https://hitsofcode.com/github/astrapi69/java-library-template/view?branch=develop)
+[![Hits Of Code](https://hitsofcode.com/github/astrapi69/play-music?branch=develop)](https://hitsofcode.com/github/astrapi69/play-music/view?branch=develop)
 
 </div>
 
-Template project for create java library projects.
+Play music with Java.
 
-> Please support this project by simply putting a Github <a class="github-button" href="https://github.com/astrapi69/java-library-template" data-icon="octicon-star" aria-label="Star astrapi69/java-library-template on GitHub">
+> Please support this project by simply putting a Github <a class="github-button" href="https://github.com/astrapi69/play-music" data-icon="octicon-star" aria-label="Star astrapi69/play-music on GitHub">
 > Star ⭐</a>
 >
 > Share this library with friends on Twitter and everywhere else you can
@@ -23,18 +23,13 @@ Template project for create java library projects.
 > If you love this project
 > [![Donation](https://img.shields.io/badge/donate-❤-ff2244.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GVBTWLRAZ7HB8)
 
-# Template from this project
-
-You can derive your java library project from this you can easily and adapt to your specific project if you follow the
-instruction from this [medium blog](https://asterios-raptis.medium.com/new-github-template-repository-feature-ec09afe261b8)
-
 ## Note
 
 No animals were harmed in the making of this library.
 
 ## License
 
-The source code comes under the liberal MIT License, making java-library-template great for all types of applications.
+The source code comes under the liberal MIT License, making play-music great for all types of applications.
 
 ## Import dependencies to your project
 
@@ -43,27 +38,27 @@ The source code comes under the liberal MIT License, making java-library-templat
 
 ## gradle dependency
 
-Replace the variable ${latestVersion} with the current latest version: [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/java-library-template/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/java-library-template)
+Replace the variable ${latestVersion} with the current latest version: [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/play-music/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/play-music)
 
 You can first define the version in the ext section and add than the following gradle dependency to
-your project `build.gradle` if you want to import the core functionality of java-library-template:
+your project `build.gradle` if you want to import the core functionality of play-music:
 
 define version in file gradle.properties
 
 ```
-javaLibraryTemplateVersion=${latestVersion}
+playMusicVersion=${latestVersion}
 ```
 
 or in build.gradle ext area
 
 ```
-    javaLibraryTemplateVersion = "${latestVersion}"
+    playMusicVersion = "${latestVersion}"
 ```
 
 then add the dependency to the dependencies area
 
 ```
-    implementation("io.github.astrapi69:java-library-template:$javaLibraryTemplateVersion")
+    implementation("io.github.astrapi69:play-music:$playMusicVersion")
 ```
 
 # with new libs.versions.toml file
@@ -72,15 +67,15 @@ If you use the new libs.versions.toml file for new automatic catalog versions up
 
 ```
 [versions]
-java-library-template-version=${latestVersion}
+play-music-version=${latestVersion}
 
 [libraries]
-java-library-template = { module = "io.github.astrapi69:java-library-template", version.ref = "java-library-template-version" }
+play-music = { module = "io.github.astrapi69:play-music", version.ref = "play-music-version" }
 ```
 then add the dependency to the dependencies area
 
 ```
-    implementation libs.java.library.template
+    implementation libs.play.music
 ```
 </details>
 
@@ -90,18 +85,18 @@ then add the dependency to the dependencies area
 ## Maven dependency
 
 Maven dependency is now on sonatype.
-Check out [sonatype repository](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~java-library-template~~~) for latest snapshots and releases.
+Check out [sonatype repository](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~play-music~~~) for latest snapshots and releases.
 
 Add the following maven dependency to your project `pom.xml` if you want to import the core
-functionality of java-library-template:
+functionality of play-music:
 
 Then you can add the dependency to your dependencies:
 
     <properties>
         ...
 ```xml
-        <!-- java-library-template version -->
-        <java-library-template.version>${latestVersion}</java-library-template.version>
+        <!-- play-music version -->
+        <play-music.version>${latestVersion}</play-music.version>
 ```
         ...
     </properties>
@@ -109,11 +104,11 @@ Then you can add the dependency to your dependencies:
         <dependencies>
         ...
 ```xml
-            <!-- java-library-template DEPENDENCY -->
+            <!-- play-music DEPENDENCY -->
             <dependency>
                 <groupId>io.github.astrapi69</groupId>
-                <artifactId>java-library-template</artifactId>
-                <version>${java-library-template.version}</version>
+                <artifactId>play-music</artifactId>
+                <version>${play-music.version}</version>
             </dependency>
 ```
         ...
@@ -126,7 +121,7 @@ Then you can add the dependency to your dependencies:
 
 ## 📸 Snapshots
 
-[![Snapshot](https://img.shields.io/badge/dynamic/xml?url=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/github/astrapi69/java-library-template/maven-metadata.xml&label=snapshot&color=red&query=.//versioning/latest)](https://oss.sonatype.org/content/repositories/snapshots/io/github/astrapi69/java-library-template/)
+[![Snapshot](https://img.shields.io/badge/dynamic/xml?url=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/github/astrapi69/play-music/maven-metadata.xml&label=snapshot&color=red&query=.//versioning/latest)](https://oss.sonatype.org/content/repositories/snapshots/io/github/astrapi69/play-music/)
 
 This section describes how to import snapshot versions into your project.
 Add the following code snippet to your gradle file in the repositories section:
@@ -210,7 +205,7 @@ or over the donation buttons at the top.
 
 ## Semantic Versioning
 
-The versions of java-library-template are maintained with the Semantic Versioning guidelines.
+The versions of play-music are maintained with the Semantic Versioning guidelines.
 
 Release version numbers will be incremented in the following format:
 
@@ -224,18 +219,18 @@ You can donate or contribute solve issues or pull request. Every support are wel
 
 ## Want to Help and improve it? ###
 
-The source code for java-library-template are on GitHub. Please feel free to fork and send pull requests!
+The source code for play-music are on GitHub. Please feel free to fork and send pull requests!
 
-Create your own fork of [astrapi69/java-library-template/fork](https://github.com/astrapi69/java-library-template/fork)
+Create your own fork of [astrapi69/play-music/fork](https://github.com/astrapi69/play-music/fork)
 
-To share your changes, [submit a pull request](https://github.com/astrapi69/java-library-template/pull/new/develop).
+To share your changes, [submit a pull request](https://github.com/astrapi69/play-music/pull/new/develop).
 
 Don't forget to add new units tests on your changes.
 
 ## Contacting the Developers
 
-Do not hesitate to contact the java-library-template developers with your questions, concerns, comments, bug reports, or feature requests.
-- Feature requests, questions and bug reports can be reported at the [issues page](https://github.com/astrapi69/java-library-template/issues).
+Do not hesitate to contact the play-music developers with your questions, concerns, comments, bug reports, or feature requests.
+- Feature requests, questions and bug reports can be reported at the [issues page](https://github.com/astrapi69/play-music/issues).
 
 ## Similar projects
 
